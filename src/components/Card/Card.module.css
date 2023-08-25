@@ -6,6 +6,10 @@
   margin-top: 40px;
   padding: 0 35px;
   height: 493px;
+
+  @media screen and (max-width: 394px) {
+    padding: 0;
+  }
 }
 
 .cardText {

@@ -9,6 +9,11 @@
   margin-top: 116px;
   justify-content: center;
   gap: 450px;
+
+  @media screen and (max-width: 1170px) {
+    flex-wrap: wrap;
+    gap: 50px;
+  }
 }
 
 .specialsBox > * {
@@ -20,6 +25,18 @@
   font-size: 64px;
   font-weight: 500;
   color: #333333;
+
+  @media screen and (max-width: 426px) {
+    font-size: 56px;
+  }
+
+  @media screen and (max-width: 376px) {
+    font-size: 48px;
+  }
+
+  @media screen and (max-width: 376px) {
+    font-size: 42px;
+  }
 }
 
 .button {
@@ -47,4 +64,8 @@
   display: flex;
   justify-content: center;
   width: 100%;
+
+  @media screen and (max-width: 1170px) {
+   flex-wrap: wrap;
+  }
 }

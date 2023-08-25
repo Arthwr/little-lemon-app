@@ -1,0 +1,104 @@
+footer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 155px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+
+  @media screen and (max-width: 1170px) {
+    flex-wrap: wrap;
+    gap: 70px;
+  }
+
+  @media screen and (max-width: 630px) {
+    gap: 5 0px;
+  }
+}
+
+.logoContainer {
+  background-color: #d9d9d9;
+}
+
+.logoContainer > img {
+  width: 117px;
+  height: 210px;
+  margin: 32px 37px;
+}
+
+.footerBody {
+  display: flex;
+  @media screen and (max-width: 1170px) {
+    flex-wrap: wrap;
+  }
+
+  @media screen and (max-width: 780px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.contactContainer > h3 {
+  margin: 15px 0px 0px 0px;
+  color: #edefee;
+  font-family: "Markazi Text";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  @media screen and (max-width: 780px) {
+    text-align: center;
+  }
+}
+
+address {
+  all: unset;
+}
+
+address > p {
+  color: #fbdabb;
+  font-family: Karla;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  @media screen and (max-width: 403px) {
+   text-align: center;
+  }
+}
+
+.socialsContainer {
+  margin-left: 68px;
+
+  @media screen and (max-width: 780px) {
+    margin: 0;
+  }
+}
+
+.socialsContainer > h3 {
+  margin: 13px 0px 0px 0px;
+  color: #edefee;
+  font-family: "Markazi Text";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  @media screen and (max-width: 780px) {
+    margin-left: 5px;
+  }
+}
+
+.linksContainer {
+  @media screen and (max-width: 780px) {
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+}
+
+.linksContainer a:nth-child(1) {
+  margin-right: 20px;
+}

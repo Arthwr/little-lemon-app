@@ -1,0 +1,45 @@
+.nav-list {
+  list-style-type: none;
+  padding: 0px 100px 0px 0px;
+
+  @media screen and (max-width: 780px) {
+    display: flex;
+    padding: 0;
+  }
+
+  @media screen and (max-width: 630px) {
+    flex-direction: column;
+  }
+}
+
+.nav-list a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  font-family: "Markazi Text";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  @media screen and (max-width: 780px) {
+    font-size: 30px;
+  }
+}
+
+nav > ul {
+  @media screen and (max-width: 630px) {
+    text-align: center;
+  }
+}
+
+.nav-list li:not(:first-child) {
+  @media screen and (max-width: 780px) {
+    margin-left: 20px;
+  }
+
+  @media screen and (max-width: 630px) {
+    margin: 0;
+  }
+}

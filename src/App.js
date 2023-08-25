@@ -2,7 +2,7 @@ import "./App.css";
 import Header from "./components/Header/Header";
 import Nav from "./components/Nav/Nav";
 import Main from "./components/Main/Main";
-import Footer from "./components/Footer";
+import Footer from "./components/Footer/Footer";
 import Section from "./components/Section/Section";
 import Wrapper from "./components/Wrapper/Wrapper";
 import Hero from "./components/Hero/Hero";
@@ -29,8 +29,11 @@ function App() {
           </Wrapper>
         </Section>
       </Main>
-
-      <Footer />
+      <Section width={"100%"} height={"auto"} backgroundColor={'#2F2F2F'}>
+        <Wrapper>
+          <Footer />
+        </Wrapper>
+      </Section>
     </>
   );
 }

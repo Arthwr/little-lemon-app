@@ -1,5 +1,5 @@
 import styles from "./Nav.module.css";
-import footerStyles from "./FooterNav.module.css";
+import footerStyles from "../Footer/FooterNav.module.css";
 
 const Nav = ({ useFooterStyles }) => {
   const navStyles = useFooterStyles ? footerStyles : styles;
