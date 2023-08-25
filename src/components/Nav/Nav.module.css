@@ -1,0 +1,38 @@
+@import "../../fonts.css";
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin-top: 40px;
+  padding: 0;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 40px;
+  font-family: "Markazi Text", serif;
+  font-weight: 400;
+}
+
+.nav-list a:hover {
+  color: #EE9972; /* Change the color when hovered */
+}
+
+.nav-list li {
+  margin-left: 32px;
+
+  @media screen and (max-width: 852px) {
+    flex: 1 1 100%; /* Take up 100% width on small screens */
+    margin: 0; /* Remove margins on small screens */
+    text-align: center;
+  }
+}
+
+.nav-list li:nth-child(1) {
+  @media screen and (max-width: 1079px) {
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,80 @@
+.cardBox {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin-bottom: 44px;
+  margin-top: 40px;
+  padding: 0 35px;
+  height: 493px;
+}
+
+.cardText {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: space-between;
+  background-color: #edefee;
+  padding-left: 17px;
+  height: 100%;
+}
+
+.cardText > h3 {
+  all: unset;
+  padding-top: 20px;
+  color: #333333;
+  font-family: "Karla";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.cardImg {
+  width: 320px;
+  height: 198px;
+}
+
+.textDescription {
+  margin-top: 33px;
+  padding-right: 34px;
+  color: #495e57;
+  font-family: "Karla";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.price {
+  padding-top: 20px;
+  padding-right: 22px;
+  color: #ee9972;
+  font-family: "Karla";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.icon {
+  padding-right: 120px;
+}
+
+.orderCta {
+  all: unset;
+  padding-left: 12px;
+  color: #333333;
+  font-family: "Karla";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.cardFooter {
+  background-color: #edefee;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 26px;
+}

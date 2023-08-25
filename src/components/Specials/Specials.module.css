@@ -1,0 +1,50 @@
+@import "../../fonts.css";
+
+.specialsBox {
+  width: 100%;
+}
+
+.specialsHead {
+  display: flex;
+  margin-top: 116px;
+  justify-content: center;
+  gap: 450px;
+}
+
+.specialsBox > * {
+  flex-basis: auto;
+}
+
+.h2 {
+  font-family: "Markazi Text", serif;
+  font-size: 64px;
+  font-weight: 500;
+  color: #333333;
+}
+
+.button {
+  display: flex;
+  width: 207px;
+  height: 70px;
+  padding: 21px 36px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background-color: #f4ce14;
+  border: 0;
+  font-family: Karla;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #333333;
+  cursor: pointer;
+}
+
+.cardList {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}

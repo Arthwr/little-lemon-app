@@ -1,0 +1,129 @@
+@import "../../fonts.css";
+
+
+
+.heroBox {
+  display: flex;
+  justify-content: center;
+  max-height: 430px;
+
+  @media screen and (max-width: 426px) {
+    flex-wrap: wrap;
+    max-height: 100%;
+  }
+}
+
+.heroTextContainer {
+  margin-top: 43px;
+  margin-right: 445px;
+
+  @media screen and (max-width: 1130px) {
+    margin-right: 160px;
+  }
+
+  @media screen and (max-width: 852px) {
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-left: 10px;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 426px) {
+    margin: 20px 0px 0px 0px;
+    text-align: center;
+  }
+}
+
+.titleContainer {
+  line-height: 0.7;
+}
+
+h1 {
+  all: unset; /* Reset default styles */
+  font-family: "Markazi Text", serif;
+  font-size: 64px;
+  font-weight: 500;
+  color: #f4ce14;
+
+  @media screen and (max-width: 425px) {
+    font-size: 56px;
+  }
+}
+
+h2 {
+  margin: initial;
+  padding: initial;
+  font-family: "Markazi Text", serif;
+  font-size: 40px;
+  font-weight: 400;
+  color: #edefee;
+}
+
+article > p {
+  font-family: "Karla", serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #edefee;
+}
+
+.heroImageContainer {
+  @media screen and (max-width: 500px) {
+    margin-right: 10px;
+  }
+
+  @media screen and (max-width: 425px) {
+    margin: 0;
+  }
+}
+
+.heroImage {
+  width: 350px;
+  height: 466px;
+  border-radius: 14px;
+  margin-top: 18px;
+
+  @media screen and (max-width: 852px) {
+    width: auto;
+    height: 400px;
+    margin-top: 5px;
+  }
+
+  @media screen and (max-width: 520px) {
+    margin-top: 30px;
+    width: auto;
+    height: 300px;
+  }
+  @media screen and (max-width: 426px) {
+    margin-top: 10px;
+    width: auto;
+    height: 400px;
+  }
+}
+
+.reserveButton {
+  display: inline-flex;
+  height: 57px;
+  padding: 21px 36px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  gap: 8px;
+  background-color: #f4ce14;
+  font-family: "Karla", serif;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 55px;
+  color: #333333;
+  border: 0;
+  cursor: pointer;
+
+  @media screen and (max-width: 852px) {
+    margin: 0 0 15px 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  br {
+    display: none;
+  }
+}
