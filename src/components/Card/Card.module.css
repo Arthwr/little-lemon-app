@@ -21,6 +21,7 @@
 .cardText > h3 {
   all: unset;
   padding-top: 20px;
+  overflow: hidden;
   color: #333333;
   font-family: "Karla";
   font-size: 18px;
@@ -35,6 +36,7 @@
 }
 
 .textDescription {
+  word-break: break-all;
   margin-top: 33px;
   padding-right: 34px;
   color: #495e57;
@@ -63,6 +65,7 @@
 .orderCta {
   all: unset;
   padding-left: 12px;
+  cursor: pointer;
   color: #333333;
   font-family: "Karla";
   font-size: 18px;
