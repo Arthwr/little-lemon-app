@@ -1,0 +1,64 @@
+@import "../../fonts.css";
+
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 254px;
+  background: #d9d9d9;
+  margin-bottom: 100px;
+  padding-bottom: 21px;
+}
+
+.clientContainer {
+  display: flex;
+  margin-top: 24px;
+  margin-left: 20px;
+  gap: 26px;
+  align-items: center;
+}
+
+.ratingTitle {
+  all: unset;
+  margin-left: 20px;
+  margin-right: 10px;
+  color: #333333;
+  font-family: "Karla";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.clientImg {
+  width: 99px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.ratingHead {
+  display: flex;
+  align-items: center;
+  margin-top: 28px;
+  justify-content: baseline;
+  gap: 0;
+}
+
+.feedBack {
+  margin: 16px 34px 0px 20px;
+
+  color: #333333;
+  font-family: "Karla";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.nameText {
+  color: #333333;
+  font-family: "Karla";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}

@@ -1,0 +1,23 @@
+.title {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 44px;
+  color: #333333;
+  font-family: Markazi Text;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.feedbackContainer {
+  display: flex;
+  justify-content: center;
+  min-height: 270px;
+  min-width: 254px;
+  gap: 32px;
+
+  @media screen and (max-width: 1125px) {
+    flex-wrap: wrap;
+  }
+}
