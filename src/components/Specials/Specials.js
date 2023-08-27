@@ -30,7 +30,7 @@ const data = [
 
 const Specials = ({ children }) => {
   return (
-    <div className={styles.specialsBox}>
+    <div id="menu-section" className={styles.specialsBox}>
       <div className={styles.specialsHead}>
         <h2 className={styles.h2}>This weeks specials!</h2>
         <button className={styles.button}>Online Menu</button>

@@ -1,51 +1,33 @@
-import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Nav from "./components/Nav/Nav";
-import Main from "./components/Main/Main";
 import Footer from "./components/Footer/Footer";
 import Section from "./components/Section/Section";
 import Wrapper from "./components/Wrapper/Wrapper";
-import Hero from "./components/Hero/Hero";
-import Specials from "./components/Specials/Specials";
-import Testimonials from "./components/Testimonials/Testimonial";
-import About from "./components/About/About";
+import "./App.css";
+import HomePage from "./pages/HomePage";
+import BookingPage from "./pages/BookingPage";
 
 function App() {
   return (
     <>
-      <Section width={"100%"} height={"auto"} backgroundColor={"#EDEFEE"}>
-        <Wrapper>
-          <Header />
-          <Nav />
-        </Wrapper>
-      </Section>
-      <Main>
-        <Section width={"100%"} height={"auto"} backgroundColor={"#495E57"}>
-          <Wrapper>
-            <Hero />
-          </Wrapper>
-        </Section>
-        <Section width={"100%"} height={"auto"} backgroundColor={"#D9D9D9"}>
-          <Wrapper>
-            <Specials />
-          </Wrapper>
-        </Section>
+      <Router>
         <Section width={"100%"} height={"auto"} backgroundColor={"#EDEFEE"}>
           <Wrapper>
-            <Testimonials />
+            <Header />
+            <Nav />
           </Wrapper>
         </Section>
-        <Section width={"100%"} height={"auto"} backgroundColor={"#495E57"}>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/booking" element={<BookingPage />} />
+        </Routes>
+        <Section width={"100%"} height={"auto"} backgroundColor={"#2F2F2F"}>
           <Wrapper>
-            <About />
+            <Footer />
           </Wrapper>
         </Section>
-      </Main>
-      <Section width={"100%"} height={"auto"} backgroundColor={"#2F2F2F"}>
-        <Wrapper>
-          <Footer />
-        </Wrapper>
-      </Section>
+      </Router>
     </>
   );
 }

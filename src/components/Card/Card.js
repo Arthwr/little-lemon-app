@@ -12,7 +12,7 @@ const Card = ({ imageSrc, title, price, description }) => {
         <p className={styles.textDescription}>{description}</p>
       </div>
       <div className={styles.cardFooter}>
-        <a href='#' className={styles.orderCta}>Order a delivery</a>
+        <a href='/' className={styles.orderCta}>Order a delivery</a>
         <img src={iconDelivery} className={styles.icon} alt="delivery icon" />
       </div>
     </div>
