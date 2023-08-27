@@ -1,0 +1,109 @@
+.aboutContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 180px;
+  align-items: center;
+
+  @media screen and (max-width: 1090px) {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+
+.mainTitle {
+  all: unset;
+  font-family: "Markazi Text", serif;
+  font-size: 64px;
+  font-weight: 500;
+  color: #f4ce14;
+}
+
+.subTitle {
+  margin: initial;
+  padding: initial;
+  font-family: "Markazi Text", serif;
+  font-size: 40px;
+  font-weight: 400;
+  color: #edefee;
+}
+
+.titleContainer {
+  margin-top: 73px;
+  line-height: 0.7;
+
+  @media screen and (max-width: 900px) {
+    text-align: center;
+    margin-top: 40px;
+  }
+}
+
+.textContainer {
+  max-width: 400px;
+  margin-top: 83px;
+  margin-bottom: 120px;
+  height: auto;
+
+  @media screen and (max-width: 900px) {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 0px;
+  }
+}
+
+.textContainer > p {
+  color: #edefee;
+  font-family: "Karla";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.photoContainer {
+  position: relative;
+  width: 480px;
+  height: 537px;
+
+  @media screen and (max-width: 425px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 50px;
+    height: 100%;
+  }
+}
+
+.photoContainer > img {
+  width: 100%;
+  max-width: 262px;
+}
+
+.photoContainer > img:nth-child(1) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+
+  @media screen and (max-width: 426px) {
+    position: static;
+    z-index: 1;
+    width: 210px;
+    height: 300px;
+  }
+}
+
+.photoContainer > img:nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+
+  @media screen and (max-width: 426px) {
+    position: static;
+    z-index: 1;
+    width: 210px;
+    height: 300px;
+  }
+}

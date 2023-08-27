@@ -8,6 +8,7 @@ import Wrapper from "./components/Wrapper/Wrapper";
 import Hero from "./components/Hero/Hero";
 import Specials from "./components/Specials/Specials";
 import Testimonials from "./components/Testimonials/Testimonial";
+import About from "./components/About/About";
 
 function App() {
   return (
@@ -32,6 +33,11 @@ function App() {
         <Section width={"100%"} height={"auto"} backgroundColor={"#EDEFEE"}>
           <Wrapper>
             <Testimonials />
+          </Wrapper>
+        </Section>
+        <Section width={"100%"} height={"auto"} backgroundColor={"#495E57"}>
+          <Wrapper>
+            <About />
           </Wrapper>
         </Section>
       </Main>
