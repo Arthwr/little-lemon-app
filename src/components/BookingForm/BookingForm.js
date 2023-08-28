@@ -9,18 +9,45 @@ const BookingForm = () => {
     occasion: "Birthday",
   });
 
+  const [errors, setErrors] = useState({
+    date: "",
+    guests: "",
+  });
+
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
+    showSuccessModal();
   };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
+
     setFormData((prevData) => ({
       ...prevData,
       [name]: value,
     }));
   };
+
+  const showSuccessModal = () => {
+    alert("Booking Form successfuly submitted!");
+    setFormData((prevData) => ({
+      ...prevData,
+      date: "",
+    }));
+  };
+
+  // <------Form Validation Start----->
+
+  const validateGuests = (value) => {
+    const intValue = parseInt(value);
+    if (isNaN(intValue) || intValue < 1 || intValue > 10) {
+      return "Please enter a valid number of guests (1-10)";
+    }
+    return "";
+  };
+
+  // <------Form Validation End----->
 
   return (
     <div className={styles.formContainer}>
@@ -35,12 +62,18 @@ const BookingForm = () => {
           type="date"
           id="res-date"
           name="date"
+          required
         />
 
         <label className={styles.label} htmlFor="res-time">
           Choose time:
         </label>
-        <select onChange={handleChange} value={formData.time} id="res-time" name="time">
+        <select
+          onChange={handleChange}
+          value={formData.time}
+          id="res-time"
+          name="time"
+        >
           <option value="17:00">17:00</option>
           <option value="18:00">18:00</option>
           <option value="19:00">19:00</option>
@@ -62,11 +95,15 @@ const BookingForm = () => {
           id="guests"
           name="guests"
         />
-
         <label className={styles.label} htmlFor="occasion">
           Occasion:
         </label>
-        <select onChange={handleChange} value={formData.occasion} id="occasion" name="occasion">
+        <select
+          onChange={handleChange}
+          value={formData.occasion}
+          id="occasion"
+          name="occasion"
+        >
           <option value="Birthday">Birthday</option>
           <option value="Anniversary">Anniversary</option>
         </select>
