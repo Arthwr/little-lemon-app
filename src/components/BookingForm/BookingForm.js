@@ -1,19 +1,46 @@
+import { useState } from "react";
 import styles from "./BookingForm.module.css";
 
 const BookingForm = () => {
+  const [formData, setFormData] = useState({
+    date: "",
+    time: "17:00",
+    guests: "1",
+    occasion: "Birthday",
+  });
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(formData);
+  };
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
   return (
     <div className={styles.formContainer}>
       <h1 className={styles.mainTitle}>Book your table today</h1>
-      <form className={styles.formBody}>
+      <form onSubmit={handleSubmit} className={styles.formBody}>
         <label className={styles.label} htmlFor="res-date">
           Choose date:
         </label>
-        <input type="date" id="res-date" />
+        <input
+          onChange={handleChange}
+          value={formData.date}
+          type="date"
+          id="res-date"
+          name="date"
+        />
 
         <label className={styles.label} htmlFor="res-time">
           Choose time:
         </label>
-        <select id="res-time">
+        <select onChange={handleChange} value={formData.time} id="res-time" name="time">
           <option value="17:00">17:00</option>
           <option value="18:00">18:00</option>
           <option value="19:00">19:00</option>
@@ -25,12 +52,21 @@ const BookingForm = () => {
         <label className={styles.label} htmlFor="guests">
           Number of guests:
         </label>
-        <input type="number" placeholder="1" min="1" max="10" id="guests" />
+        <input
+          onChange={handleChange}
+          value={formData.guests}
+          type="number"
+          placeholder="1"
+          min="1"
+          max="10"
+          id="guests"
+          name="guests"
+        />
 
         <label className={styles.label} htmlFor="occasion">
           Occasion:
         </label>
-        <select id="occasion">
+        <select onChange={handleChange} value={formData.occasion} id="occasion" name="occasion">
           <option value="Birthday">Birthday</option>
           <option value="Anniversary">Anniversary</option>
         </select>
