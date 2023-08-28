@@ -9,11 +9,6 @@ const BookingForm = () => {
     occasion: "Birthday",
   });
 
-  const [errors, setErrors] = useState({
-    date: "",
-    guests: "",
-  });
-
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
