@@ -32,18 +32,6 @@ const BookingForm = () => {
     }));
   };
 
-  // <------Form Validation Start----->
-
-  const validateGuests = (value) => {
-    const intValue = parseInt(value);
-    if (isNaN(intValue) || intValue < 1 || intValue > 10) {
-      return "Please enter a valid number of guests (1-10)";
-    }
-    return "";
-  };
-
-  // <------Form Validation End----->
-
   return (
     <div className={styles.formContainer}>
       <h1 className={styles.mainTitle}>Book your table today</h1>
@@ -58,6 +46,7 @@ const BookingForm = () => {
           id="res-date"
           name="date"
           required
+          aria-label="Choose Date"
         />
 
         <label className={styles.label} htmlFor="res-time">
@@ -89,6 +78,7 @@ const BookingForm = () => {
           max="10"
           id="guests"
           name="guests"
+          aria-label="Number of guests"
         />
         <label className={styles.label} htmlFor="occasion">
           Occasion:

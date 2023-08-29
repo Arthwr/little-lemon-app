@@ -89,7 +89,6 @@ input[type="date"],
 input[type="number"],
 input[type="date"],
 select {
-  text-align: center;
   font-family: "Markazi Text";
   font-size: 24px; /* Adjust the value to your desired font size */
 }
