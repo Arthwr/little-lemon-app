@@ -1,9 +1,12 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import styles from "./BookingForm.module.css";
 
-const BookingForm = () => {
+const BookingForm = ({ availableTimes, dispatch }) => {
+  const navigate = useNavigate();
+
   const [formData, setFormData] = useState({
-    date: "",
+    date: new Date().toISOString().slice(0, 10),
     time: "17:00",
     guests: "1",
     occasion: "Birthday",
@@ -12,7 +15,7 @@ const BookingForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
-    showSuccessModal();
+    navigate("/success", { state: formData }); // Redirect to the success page
   };
 
   const handleChange = (e) => {
@@ -22,14 +25,11 @@ const BookingForm = () => {
       ...prevData,
       [name]: value,
     }));
-  };
 
-  const showSuccessModal = () => {
-    alert("Booking Form successfuly submitted!");
-    setFormData((prevData) => ({
-      ...prevData,
-      date: "",
-    }));
+    if (name === "date") {
+      // generates new time slots each time user changes date
+      dispatch({ type: "UPDATE_TIMES", date: new Date(value) });
+    }
   };
 
   return (
@@ -47,6 +47,7 @@ const BookingForm = () => {
           name="date"
           required
           aria-label="Choose Date"
+          min={new Date().toISOString().slice(0, 10)} // Minimum date is the current date
         />
 
         <label className={styles.label} htmlFor="res-time">
@@ -58,12 +59,11 @@ const BookingForm = () => {
           id="res-time"
           name="time"
         >
-          <option value="17:00">17:00</option>
-          <option value="18:00">18:00</option>
-          <option value="19:00">19:00</option>
-          <option value="20:00">20:00</option>
-          <option value="21:00">21:00</option>
-          <option value="22:00">22:00</option>
+          {availableTimes.map((time) => (
+            <option key={time} value={time}>
+              {time}
+            </option>
+          ))}
         </select>
 
         <label className={styles.label} htmlFor="guests">
