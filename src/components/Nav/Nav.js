@@ -38,10 +38,10 @@ const Nav = ({ useFooterStyles }) => {
           <Link to="/booking">Reservations</Link>
         </li>
         <li>
-          <a href="/order">Order Online</a>
+          <Link to="/">Order Online</Link>
         </li>
         <li>
-          <a href="/login">Login</a>
+          <Link to="/">Login</Link>
         </li>
       </ul>
     </nav>
