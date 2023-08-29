@@ -1,4 +1,3 @@
-import Main from "../components/Main/Main";
 import Section from "../components/Section/Section";
 import Wrapper from "../components/Wrapper/Wrapper";
 import Hero from "../components/Hero/Hero";
