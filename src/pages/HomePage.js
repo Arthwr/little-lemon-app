@@ -4,8 +4,13 @@ import Hero from "../components/Hero/Hero";
 import Specials from "../components/Specials/Specials";
 import Testimonials from "../components/Testimonials/Testimonial";
 import About from "../components/About/About.js";
+import { useEffect } from "react";
 
 function HomePage() {
+  useEffect(() => {
+    document.title = "Little Lemon";
+  }, []);
+
   return (
     <>
       <Section width={"100%"} height={"auto"} backgroundColor={"#495E57"}>

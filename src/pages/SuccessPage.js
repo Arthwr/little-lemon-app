@@ -1,5 +1,6 @@
 import Wrapper from "../components/Wrapper/Wrapper";
 import Section from "../components/Section/Section";
+import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 const SuccessPage = () => {
@@ -28,6 +29,11 @@ const SuccessPage = () => {
     textAlign: "center",
   };
   // Styles end
+
+  useEffect(() => {
+    document.title = "Booking Successful - Little Lemon";
+  }, []);
+
   return (
     <>
       <Section width="100%" height="auto" backgroundColor={"#495E57"}>
