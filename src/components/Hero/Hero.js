@@ -1,7 +1,13 @@
+import { useNavigate } from "react-router-dom";
 import heroImage from "../../assets/restauranfood.webp";
 import styles from "./Hero.module.css";
 
 const Hero = () => {
+  const navigate = useNavigate();
+  const handleRedirect = () => {
+    navigate("/booking");
+  };
+
   return (
     <div className={styles.heroBox}>
       <div className={styles.heroTextContainer}>
@@ -18,10 +24,12 @@ const Hero = () => {
             twist.
           </p>
         </article>
-        <button className={styles.reserveButton}>Reserve a Table</button>
+        <button className={styles.reserveButton} onClick={handleRedirect}>
+          Reserve a Table
+        </button>
       </div>
       <div className={styles.heroImageContainer}>
-        <img
+        <img  
           src={heroImage}
           className={styles.heroImage}
           alt="Restaurant Food"

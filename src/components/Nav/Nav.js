@@ -5,17 +5,6 @@ import footerStyles from "../Footer/FooterNav.module.css";
 const Nav = ({ useFooterStyles }) => {
   const navStyles = useFooterStyles ? footerStyles : styles;
 
-  const handleClick = (anchor) => () => {
-    const id = `${anchor}-section`;
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }
-  };
-
   return (
     <nav>
       <ul className={navStyles["nav-list"]}>
@@ -25,14 +14,10 @@ const Nav = ({ useFooterStyles }) => {
           </Link>
         </li>
         <li>
-          <a href="#about" onClick={handleClick("about")}>
-            About
-          </a>
+          <Link to="/#about">About</Link>
         </li>
         <li>
-          <a href="#menu" onClick={handleClick("menu")}>
-            Menu
-          </a>
+          <Link to="/#menu">Menu</Link>
         </li>
         <li>
           <Link to="/booking">Reservations</Link>

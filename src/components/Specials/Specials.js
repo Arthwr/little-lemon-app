@@ -2,6 +2,7 @@ import greekSalad from "../../assets/greek-salad.webp";
 import bruchetta from "../../assets/bruchetta.webp";
 import lemonDessert from "../../assets/lemon-dessert.webp";
 import Card from "../Card/Card";
+import useScrollToSection from "../../hooks/useScrollToSection";
 import styles from "./Specials.module.css";
 
 const data = [
@@ -29,11 +30,15 @@ const data = [
 ];
 
 const Specials = ({ children }) => {
+  const scrollToSection = useScrollToSection();
+
   return (
-    <div id="menu-section" className={styles.specialsBox}>
+    <div id="menu" className={styles.specialsBox}>
       <div className={styles.specialsHead}>
         <h2 className={styles.h2}>This weeks specials!</h2>
-        <button className={styles.button}>Online Menu</button>
+        <button className={styles.button} onClick={scrollToSection("menu")}>
+          Online Menu
+        </button>
       </div>
       <div className={styles.cardList}>
         {data.map((cardData) => (
