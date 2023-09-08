@@ -1,5 +1,37 @@
 @import "../../fonts.css";
 
+.navContainer {
+  @media screen and (max-width: 852px) {
+    width: 100%;
+    transition: height 0.5s;
+    height: 0;
+  }
+}
+
+.navContainer.open {
+  @media screen and (max-width: 852px) {
+    height: 350px;
+  }
+}
+
+.nav {
+  @media screen and (max-width: 852px) {
+    position: fixed;
+    left: -100%;
+    transition: left 0.7s ease-in-out, opacity 0.3s;
+    width: 100%;
+    opacity: 0;
+  }
+}
+
+.nav.open {
+  @media screen and (max-width: 852px) {
+    position: absolute;
+    left: 0;
+    opacity: 1;
+  }
+}
+
 .nav-list {
   display: flex;
   list-style: none;
@@ -7,6 +39,7 @@
   padding: 0;
   margin-bottom: 40px;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .nav-list a {

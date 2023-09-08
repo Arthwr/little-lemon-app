@@ -1,11 +1,10 @@
-import Header from "./components/Header/Header";
-import Nav from "./components/Nav/Nav";
 import Footer from "./components/Footer/Footer";
 import Section from "./components/Section/Section";
 import Wrapper from "./components/Wrapper/Wrapper";
 import "./App.css";
 import Main from "./components/Main/Main";
 import ScrollToAnchor from "./components/ScrollToAnchor/ScrollToAnchor";
+import AppHeader from "./components/AppHeader/AppHeader";
 
 function App() {
   return (
@@ -13,8 +12,7 @@ function App() {
       <ScrollToAnchor />
       <Section width={"100%"} height={"auto"} backgroundColor={"#EDEFEE"}>
         <Wrapper>
-          <Header />
-          <Nav />
+          <AppHeader />
         </Wrapper>
       </Section>
       <Main />

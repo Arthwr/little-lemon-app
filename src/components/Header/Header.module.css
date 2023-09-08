@@ -1,6 +1,12 @@
-.header {
-  margin: 0;
-  padding: 0;
+header {
+  @media screen and (max-width: 852px) {
+    display: flex;
+    justify-content: space-around;
+    gap: 10vw;
+    align-items: center;
+    width: 100%;
+    position: relative;
+  }
 }
 
 .logo {
@@ -8,5 +14,9 @@
   height: 70px;
   @media screen and (max-width: 1110px) {
     margin-top: 40px;
+  }
+
+  @media screen and (max-width: 852px) {
+    margin-bottom: 20px;
   }
 }

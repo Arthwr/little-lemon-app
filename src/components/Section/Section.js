@@ -1,4 +1,3 @@
-
 const Section = ({ width, height, backgroundColor, children }) => {
   const sectionStyle = {
     width: width,
@@ -6,11 +5,7 @@ const Section = ({ width, height, backgroundColor, children }) => {
     backgroundColor: backgroundColor,
   };
 
-  return (
-    <div style={sectionStyle}>
-      {children}
-    </div>
-  );
+  return <div style={sectionStyle}>{children}</div>;
 };
 
 export default Section;

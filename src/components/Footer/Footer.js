@@ -11,7 +11,7 @@ const Footer = () => {
         <img src={altLogo} alt="Alternative Little Lemon logo" />
       </div>
       <div className={styles.footerBody}>
-        <Nav useFooterStyles />
+        <Nav useFooterStyles  />
         <div className={styles.contactContainer}>
           <h3>Contact Us:</h3>
           <address>
