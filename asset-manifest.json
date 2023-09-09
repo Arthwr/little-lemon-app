@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/little-lemon-app/static/css/main.4e0389be.css",
+    "main.js": "/little-lemon-app/static/js/main.18a32f65.js",
+    "static/js/787.c0b67421.chunk.js": "/little-lemon-app/static/js/787.c0b67421.chunk.js",
+    "static/media/greek-salad.webp": "/little-lemon-app/static/media/greek-salad.32286c576a4db20a5f29.webp",
+    "static/media/restauranfood.webp": "/little-lemon-app/static/media/restauranfood.3115c087ac20ddc0e3a5.webp",
+    "static/media/alt-logo.webp": "/little-lemon-app/static/media/alt-logo.44a53cee937adf61b369.webp",
+    "static/media/bruchetta.webp": "/little-lemon-app/static/media/bruchetta.3e9d0f6adea3d76708a4.webp",
+    "static/media/Logo.svg": "/little-lemon-app/static/media/Logo.6c132dfefa69396bba43f72aa595e62f.svg",
+    "static/media/Mario-and-Adrian-B.webp": "/little-lemon-app/static/media/Mario-and-Adrian-B.ed2970afe61347a292a6.webp",
+    "static/media/Mario-and-Adrian-A.webp": "/little-lemon-app/static/media/Mario-and-Adrian-A.8ab5d8a691afc90e5c79.webp",
+    "static/media/michael.webp": "/little-lemon-app/static/media/michael.8fa6f0a8bf60e6942e98.webp",
+    "static/media/lemon-dessert.webp": "/little-lemon-app/static/media/lemon-dessert.1f15789d415c49fefdfb.webp",
+    "static/media/sophia.webp": "/little-lemon-app/static/media/sophia.205020e0745d86d24ea0.webp",
+    "static/media/ethan.webp": "/little-lemon-app/static/media/ethan.c41fb7caf785c82d169f.webp",
+    "static/media/emily.webp": "/little-lemon-app/static/media/emily.70369214f6d6d2bf7cf1.webp",
+    "static/media/youtube-logo.svg": "/little-lemon-app/static/media/youtube-logo.d52fb8dbfb5b611eb22858fb23bcf60e.svg",
+    "static/media/twitter-logo.svg": "/little-lemon-app/static/media/twitter-logo.092415c0257513dd6c6d526914fbbab4.svg",
+    "index.html": "/little-lemon-app/index.html",
+    "static/media/starImg.webp": "/little-lemon-app/static/media/starImg.a155317d68c611d7ec95.webp",
+    "static/media/iconD.webp": "/little-lemon-app/static/media/iconD.43a097cac70aabdae78e.webp",
+    "main.4e0389be.css.map": "/little-lemon-app/static/css/main.4e0389be.css.map",
+    "main.18a32f65.js.map": "/little-lemon-app/static/js/main.18a32f65.js.map",
+    "787.c0b67421.chunk.js.map": "/little-lemon-app/static/js/787.c0b67421.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4e0389be.css",
+    "static/js/main.18a32f65.js"
+  ]
+}
