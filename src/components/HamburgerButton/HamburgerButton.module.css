@@ -16,10 +16,12 @@
   border-color: #495e57;
   height: 10px;
   width: 40px;
-  transition: transform 0.3s ease-in-out; /* Animation for sliding */
+  transition: transform 0.3s ease-in-out;
+  caret-color: transparent;
 }
 
 /* Styles for open menu */
+
 .open .bar:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
 }

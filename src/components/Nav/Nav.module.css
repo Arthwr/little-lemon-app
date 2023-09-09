@@ -18,7 +18,7 @@
   @media screen and (max-width: 852px) {
     position: fixed;
     left: -100%;
-    transition: left 0.7s ease-in-out, opacity 0.3s;
+    transition: left 0.5s ease-in-out;
     width: 100%;
     opacity: 0;
   }
@@ -40,6 +40,7 @@
   margin-bottom: 40px;
   flex-wrap: wrap;
   width: 100%;
+  caret-color: transparent;
 }
 
 .nav-list a {

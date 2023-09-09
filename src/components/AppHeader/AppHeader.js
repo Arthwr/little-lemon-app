@@ -12,6 +12,23 @@ const AppHeader = () => {
     setMenuOpen(!isMenuOpen);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      // Check if the user has scrolled, and if the menu is open, close it
+      if (isMenuOpen) {
+        setMenuOpen(false);
+      }
+    };
+
+    // Add event listeners
+    document.addEventListener("scroll", handleScroll);
+
+    // Remove event listeners when the component unmounts
+    return () => {
+      document.removeEventListener("scroll", handleScroll);
+    };
+  }, [isMenuOpen]);
+
   return (
     <>
       <Header toggleMenu={toggleMenu} />
