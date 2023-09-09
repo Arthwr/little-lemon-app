@@ -30,6 +30,7 @@ const Footer = () => {
               href="https://twitter.com"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Follow us on Twitter"
             >
               <TwitterLogo />
             </a>
@@ -37,6 +38,7 @@ const Footer = () => {
               href="https://youtube.com"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Follow us on Youtube"
             >
               <YoutubeLogo />
             </a>
