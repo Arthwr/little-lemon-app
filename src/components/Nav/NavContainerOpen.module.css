@@ -1,0 +1,7 @@
+.navigation-container.open-menu {
+  @media screen and (max-width: 852px) {
+    width: 100%;
+    transition: height 0.5s;
+    height: 350px;
+  }
+}

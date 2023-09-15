@@ -1,0 +1,9 @@
+.navigation {
+    @media screen and (max-width: 852px) {
+      position: fixed;
+      left: -100%;
+      transition: left 0.5s ease-in-out;
+      width: 100%;
+      opacity: 0;
+    }
+  }

@@ -19,17 +19,3 @@
   transition: transform 0.3s ease-in-out;
   caret-color: transparent;
 }
-
-/* Styles for open menu */
-
-.open .bar:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
-}
-
-.open .bar:nth-child(2) {
-  opacity: 0; /* Hide the middle bar when menu is open */
-}
-
-.open .bar:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
-}

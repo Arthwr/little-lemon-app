@@ -1,19 +1,27 @@
-import { forwardRef } from "react";
 import { Link } from "react-router-dom";
 import styles from "./Nav.module.css";
 import footerStyles from "../Footer/FooterNav.module.css";
+import navigationStyles from "./Navigation.module.css";
+import openStyles from "./NavContainerOpen.module.css";
+import openNavigationStyles from "./NavigationOpen.module.css";
 
-const Nav = forwardRef(({ useFooterStyles, isMenuOpen }, ref) => {
+const Nav = ({ useFooterStyles, isMenuOpen }) => {
   const navStyles = useFooterStyles ? footerStyles : styles;
+  const containerStyles = isMenuOpen ? openStyles : styles;
+  const navStylesForNavigation = isMenuOpen
+    ? openNavigationStyles
+    : navigationStyles;
 
   return (
     <div
-      className={`${navStyles["navContainer"]} ${
-        isMenuOpen ? navStyles["open"] : ""
+      className={`${containerStyles["navigation-container"]} ${
+        isMenuOpen ? containerStyles["open-menu"] : ""
       }`}
     >
       <nav
-        className={`${navStyles["nav"]} ${isMenuOpen ? navStyles["open"] : ""}`}
+        className={`${navStylesForNavigation["navigation"]} ${
+          isMenuOpen ? navStylesForNavigation["open-menu"] : ""
+        }`}
       >
         <ul className={navStyles["nav-list"]}>
           <li>
@@ -40,6 +48,6 @@ const Nav = forwardRef(({ useFooterStyles, isMenuOpen }, ref) => {
       </nav>
     </div>
   );
-});
+};
 
 export default Nav;
